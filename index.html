@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+        <title>CONVERSOR DE DIVISAS</title>
+    
+    
+ 
+<script>
+function convertir(){
+    
+    var r1=0;
+    var r2=0;
+    var r3=0;  
+    var r4=0;
+    var r5=0;
+    var r6=0;
+     
+	val1 = document.getElementById("a1").value;
+	val2 = document.getElementById("a2").value;
+	val3 = document.getElementById("a3").value;
+	val4 = document.getElementById("a4").value;
+	val5 = document.getElementById("a5").value;
+	val6 = document.getElementById("a6").value;
+    r1 = (val1/2.784);
+   	r2 = (val2*2.784);
+   	r3 = (val3/25.1);
+   	r4 = (val4*25.1);
+   	r5 =  (val5/789);
+   	r6 =  (val6*789);
+	document.getElementById("r1").value = r1;
+    document.getElementById("r2").value = r2;
+    document.getElementById("r3").value = r3;
+    document.getElementById("r4").value = r4;
+    document.getElementById("r5").value = r5;
+    document.getElementById("r6").value = r6;
+	
+      
+
+</script>
+</head>
+<body>
+
+<h1>RESULTADO</h1>
+
+<form id="convertir">
+
+     
+  <p>COP A USD <input type="text" id="a1" value=0 onChange="convertir();"> RESULTADO 1<input type="text" id="r1">
+  <p>USD A COP<input type="text" id="a2" value=0 onChange="convertir();">  RESULTADO 2<input type="text" id="r2">
+  <p>COP A YEN<input type="text" id="a3" value=0 onChange="convertir();">   RESULTADO 3<input type="text" id="r3">
+  <p>YEN A COP<input type="text" id="a4" value=0 onChange="convertir();">   RESULTADO 4<input type="text" id="r4">
+  <p>COP A REAL<input type="text" id="a5" value=0 onChange="convertir();">  RESULTADO  5<input type="text" id="r5">
+  <p>REAL A COP<input type="text" id="a6" value=0 onChange="convertir();"> 	RESULTADO 6<input type="text" id="r6">
+ 
+ 
+ 
+<p></p>
+    
+  
+
+</form>
+
+<br><br>
+
+
+
+
+</body>
+</html>
